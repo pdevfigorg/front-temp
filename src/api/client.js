@@ -1,7 +1,7 @@
 // to import value from environment
 // const API_BASE_URL =  import.meta.env.API_BASE_URL
 
-const API_BASE_URL = "http://localhost:9000"
+const API_BASE_URL = `${window.location.origin}/api`
 
 async function request(endpoint, options = {}) {
     
