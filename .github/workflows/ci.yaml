@@ -12,7 +12,6 @@ permissions:
 
 env:
   REGISTRY: docker.io 
-  IMAGE_NAME: ${{ github.repository.name }}
 
 jobs:
   # temporary even though there is not test files
@@ -58,5 +57,5 @@ jobs:
           context: .
           push: true
           tags: |
-            pdevfig/${{ env.IMAGE_NAME }}:${{ github.sha }}
-            pdevfig/${{ env.IMAGE_NAME }}:main
+            pdevfig/front-temp:${{ github.sha }}
+            pdevfig/front-temp:main
