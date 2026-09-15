@@ -44,7 +44,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/chekout@v7
+        uses: actions/checkout@v7
         with:
           bun-version: 1.3.14
       
