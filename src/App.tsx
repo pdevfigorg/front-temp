@@ -93,6 +93,7 @@ export function App() {
   }
   return (
     <div className="w-dvw h-dvh flex justify-center items-center">
+      <h1>This is edited to check the application got changes or not.</h1>
         <div className="m-1 p-6 border-2 border-green-200 border-solid rounded-2xl flex justify-center items-center gap-2 bg-gray-200">
           <Button onClick={updateMessage}>Update Time</Button>
           <h1 className="w-60 h-10 border-2 border-solid border-red-200 p-2 rounded-2xl bg-gray-100 flex justify-center items-center">{updateStatus ? <Spinner />: message}</h1>
